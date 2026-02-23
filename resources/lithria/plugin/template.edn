@@ -1,0 +1,7 @@
+{:description "A Lithria Paper plugin (thin JAR, depends on LithClojureRuntime)"
+
+ :transform
+ [;; Everything in root/ copies directly to the project root
+  ["root" ""]
+  ;; src/ copies into the namespaced source tree
+  ["src" "src/{{top/file}}/{{main/file}}"]]}
